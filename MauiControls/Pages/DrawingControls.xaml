@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiControls.Pages.DrawingControls"
+             Title="Drawing Controls">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="10" >
+            <Frame BackgroundColor="#EAEEFA">
+                <BoxView WidthRequest="200" 
+                         HeightRequest="100"
+                         HorizontalOptions="Center"
+                         Color="Brown"
+                         CornerRadius="20" />
+            </Frame>
+
+            <Frame BackgroundColor="#EAEEFA">
+                <Rectangle WidthRequest="200"
+                           HeightRequest="100"
+                           Fill="Black"
+                           RadiusX="10"
+                           RadiusY="10"
+                           Stroke="Red"
+                           StrokeThickness="10"/>
+            </Frame>
+            <Frame BackgroundColor="#EAEEFA">
+                <Line X1="0" Y1="0" X2="150" Y2="90"
+                      Stroke="Blue"
+                      StrokeThickness="10"/>
+            </Frame>
+            <Frame BackgroundColor="#EAEEFA">
+                <Ellipse Fill="Green"
+                         WidthRequest="150"
+                         HeightRequest="100"
+                         Stroke="Black"
+                         StrokeThickness="10"/>
+            </Frame>
+            <Frame BackgroundColor="#EAEEFA">
+                <Polygon Points="20,15 300,50 300,100 200,150,80,60"
+                         Fill="Gold"
+                         Stroke="Black"
+                         StrokeThickness="10"/>
+            </Frame>
+            <Frame BackgroundColor="#EAEEFA">
+                <Polyline Points="20,15 300,50 300,100 200,150 80,60 20,15"
+                          Stroke="Blue"
+                          StrokeThickness="5"/>
+            </Frame>
+            <Frame>
+                <Path Data=""
+                      Stroke="Black"
+                      StrokeThickness="2"
+                      Aspect="Uniform"
+                      HorizontalOptions="Center"/>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
